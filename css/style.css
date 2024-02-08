@@ -32,14 +32,29 @@ button{
     margin: 0 auto;
 }
 
+.container{
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;
 }
 
-.col12{
+.col-12{
     width: calc(12 * 100% / 12);
 }
+
+.col-4{
+    width: calc(4 * 100% / 12);
+}
+
+.col-8{
+    width: calc(8 * 100% / 12);
+}
+
+
 
 /* UTILITI */
 
@@ -52,10 +67,29 @@ button{
     flex-wrap: wrap;
 }
 
+/* BUTTONS */
+
 .button{
     background-color: #0161FF;
     color: white;
     display: inline-block;
+}
+
+.button_small{
+    line-height: 35px;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.button_medium{
+    line-height: 45px;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.button_bg_none{
+    background: none;
+    color: black;
 }
 
 /* HEADER */
@@ -73,10 +107,29 @@ button{
     flex-wrap: nowrap;
 }
 
-.button_small{
-    line-height: 35px;
-    font-size: 20px;
-    padding: 0 10px;
+
+
+/* MAIN */
+
+/* HERO SECTION */
+.hero_title{
+    margin-bottom: 75px;
+}
+
+.hero{
+    padding-top: 100px;
+    background-color: #B4D0E7;
+}
+
+.style_col_1{
+    gap: 30px;
+    align-content: flex-start;
+}
+
+.arrow_hero{
+    /* margin-top: auto; */
+    /* display: inline-block; */
+    display: block;
 }
 
 /* DEBUG */
