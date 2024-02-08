@@ -1,0 +1,90 @@
+/* RESET */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+img{
+	max-width: 100%;
+} 
+
+a{
+	text-decoration: none;
+	color: currentColor;
+}
+
+menu,
+ul,
+ol{
+	list-style: none;
+}
+
+button{
+    all: initial;
+}
+
+/* LAYOUT */
+
+.container_lg{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col12{
+    width: calc(12 * 100% / 12);
+}
+
+/* UTILITI */
+
+.space_between{
+    justify-content: space-between;
+}
+
+.flex_box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button{
+    background-color: #0161FF;
+    color: white;
+}
+
+/* HEADER */
+
+.header_nav{
+    display: flex;
+    gap: 30px;
+}
+
+.row.header{
+    justify-content: space-between;
+    padding: 10px 0;
+    flex-wrap: nowrap;
+}
+
+.button_small{
+    line-height: 35px;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+/* DEBUG */
+
+.debug .container_lg{
+   border: 1px solid black;
+   padding: 2px;
+}
+
+.debug [class^='col']{
+    border: 1px solid red;
+    height: 100px;
+    padding: 2px;
+}
