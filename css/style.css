@@ -22,7 +22,7 @@ ol{
 }
 
 button{
-    all: initial;
+    border: none;
 }
 
 /* LAYOUT */
@@ -55,6 +55,7 @@ button{
 .button{
     background-color: #0161FF;
     color: white;
+    display: inline-block;
 }
 
 /* HEADER */
@@ -62,11 +63,13 @@ button{
 .header_nav{
     display: flex;
     gap: 30px;
+    align-items: center;
+    color: grey;
 }
 
 .row.header{
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 22px;
     flex-wrap: nowrap;
 }
 
