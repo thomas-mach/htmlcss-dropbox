@@ -118,18 +118,22 @@ button{
 
 .hero{
     padding-top: 100px;
+    padding-bottom: 20px;
     background-color: #B4D0E7;
 }
 
 .style_col_1{
     gap: 30px;
-    align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.title_style{
+    font-size: 75px;
 }
 
 .arrow_hero{
-    /* margin-top: auto; */
-    /* display: inline-block; */
-    display: block;
+  margin-top: auto;
 }
 
 /* DEBUG */
