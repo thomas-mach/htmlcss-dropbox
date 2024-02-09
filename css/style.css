@@ -37,6 +37,11 @@ button{
     margin: 0 auto;
 }
 
+.container_sm{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -111,7 +116,7 @@ button{
 
 /* MAIN */
 
-/* HERO SECTION */
+/* HERO <SECTION> */
 .hero_title{
     margin-bottom: 75px;
 }
@@ -122,13 +127,13 @@ button{
     background-color: #B4D0E7;
 }
 
-.style_col_1{
+.style_column_1{
     gap: 30px;
     align-items: flex-start;
     flex-direction: column;
 }
 
-.title_style{
+.title_style_h1{
     font-size: 75px;
 }
 
@@ -136,15 +141,78 @@ button{
   margin-top: auto;
 }
 
+
+
+/* PRICING - OPTIONS <SECTION> */
+
+.fatturazione_radio_button{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    color: grey;
+    padding-bottom: 50px;
+}
+
+.title_style_h3{
+    font-size: 30px;
+    margin-bottom: 75px;
+}
+
+.title_radio{
+    padding-top: 165px;
+}
+
+.card_header{
+    border: 1px solid grey;
+}
+
+.card_main{
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    height: 100%;
+}
+
+.cards{
+    gap: 50px;
+    flex-wrap: nowrap;
+    
+}
+
+.pricing_card{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 /* DEBUG */
 
-.debug .container_lg{
+/* .debug .container_lg{
    border: 1px solid black;
-   padding: 2px;
+   padding: 3px;
+}
+
+.debug .container{
+    border: 1px solid black;
+    padding: 3px;
+} */
+
+ .debug .container_sm{
+    border: 1px solid black;
+    padding: 3px;
+    height: 150px;
 }
 
 .debug [class^='col']{
     border: 1px solid red;
-    height: 100px;
-    padding: 2px;
+    /* height: 100px; */
+    padding: 3px;
 }
+
+.debug .row{
+    border: 1px solid green;
+    padding: 3px;
+ }
+
+ 
