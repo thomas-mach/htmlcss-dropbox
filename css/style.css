@@ -8,6 +8,7 @@
 
 img{
 	max-width: 100%;
+    display: block;
 } 
 
 a{
@@ -171,9 +172,11 @@ button{
 .card{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     padding: 0 25px;
     padding-bottom: 25px;
     align-content: flex-start;
+   
 }
 
 .card_header{
@@ -285,6 +288,47 @@ button{
     color: black;
     border: 1px solid black;
 }
+
+/* BUSINESS-BENEFITS */
+
+.card_benefits{
+    padding: 0 60px 70px;
+}
+
+.card_title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.card_description{
+    font-size: 14px;
+}
+
+.row_padding{
+    padding-top: 125px;
+}
+
+
+.title_business-benefits{
+    padding: 150px 0 80px;
+}
+
+.card_title{
+    font-size: 30px;
+}
+
+.row_column{
+    flex-direction: column;
+}
+
+.link_style a{
+    text-decoration: underline;
+    color: blue;
+    font-size: 14px;    
+}
+
+/* DROPBOX */
 
 
 /* DEBUG */
