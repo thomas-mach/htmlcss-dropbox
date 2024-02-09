@@ -28,17 +28,20 @@ button{
 /* LAYOUT */
 
 .container_lg{
-    max-width: 1920px;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 0 12px;
 }
 
 .container{
-    max-width: 1230px;
+    max-width: 100%;
+    max-width: 1254px;
     margin: 0 auto;
 }
 
 .container_sm{
-    max-width: 1000px;
+    max-width: 100%;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -78,6 +81,7 @@ button{
     background-color: #0161FF;
     color: white;
     display: inline-block;
+    text-align: center;
 }
 
 .button_small{
@@ -162,21 +166,34 @@ button{
     padding-top: 165px;
 }
 
+/* CARDS */
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 25px;
+    padding-bottom: 25px;
+}
+
 .card_header{
-    border: 1px solid grey;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid black;
 }
 
 .card_main{
-    border-right: 1px solid grey;
-    border-bottom: 1px solid grey;
-    border-left: 1px solid grey;
-    height: 100%;
-}
-
-.cards{
-    gap: 50px;
-    flex-wrap: nowrap;
-    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 55px;
+    padding: 40px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .pricing_card{
@@ -184,6 +201,73 @@ button{
     flex-direction: column;
 }
 
+.price{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.user_features{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.anchors_link{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.plan_highlights{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.price_title{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.price_price{
+    font-size: 12px;
+}
+
+.mese{
+    font-size: 12px;
+    color: gray;
+}
+
+.user_features{
+    font-size: 14px;
+}
+
+.link_style{
+    font-size: 14px;
+}
+
+.link_style a{
+    text-decoration: underline;
+    color: blue;
+    font-size: 14px;    
+}
+
+.plan_highlights_title{
+    font-weight: 700;
+}
+
+.plan_highlights{
+    font-size: 14px;
+}
+
+.check_color{
+    color: #0161FF;
+}
 
 
 /* DEBUG */
