@@ -173,6 +173,7 @@ button{
     flex-wrap: wrap;
     padding: 0 25px;
     padding-bottom: 25px;
+    align-content: flex-start;
 }
 
 .card_header{
@@ -180,7 +181,10 @@ button{
     line-height: 40px;
     font-size: 15px;
     width: 100%;
-    border: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    
 }
 
 .card_main{
@@ -191,9 +195,7 @@ button{
     padding: 40px 0;
     padding-left: 10px;
     padding-right: 10px;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
+    border: 1px solid black;
 }
 
 .pricing_card{
@@ -267,6 +269,21 @@ button{
 
 .check_color{
     color: #0161FF;
+}
+
+/* CONTACT */
+
+.flex_contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px 50px;
+}
+
+.button_trasparent{
+    background: none;
+    color: black;
+    border: 1px solid black;
 }
 
 
