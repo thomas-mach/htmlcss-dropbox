@@ -348,7 +348,7 @@ button{
 /* MEMBERS */
 
 .members{
-    padding: 150px 0;
+    padding: 150px 0 80px;
 }
 
 .item{
@@ -433,6 +433,21 @@ button{
 
 h3.text_color{
     color: #61072B;
+}
+
+/* FAQ */
+.faq_question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    line-height: 100px;
+    padding-right: 50px;
+}
+
+.faq_title{
+    border-bottom: 1px solid black;
+    line-height: 140px;
 }
 
 /* DEBUG */
