@@ -9,7 +9,7 @@
 img{
 	max-width: 100%;
     display: block;
-} 
+}   
 
 a{
 	text-decoration: none;
@@ -29,7 +29,7 @@ button{
 /* LAYOUT */
 
 .container_lg{
-    max-width: 100%;
+    max-width: 1944;
     margin: 0 auto;
     padding: 0 12px;
 }
@@ -51,8 +51,8 @@ button{
     flex-wrap: wrap;
 }
 
-.col-12{
-    width: calc(12 * 100% / 12);
+.col-2{
+    width: calc(2 * 100 / 12);
 }
 
 .col-4{
@@ -61,6 +61,10 @@ button{
 
 .col-8{
     width: calc(8 * 100% / 12);
+}
+
+.col-12{
+    width: calc(12 * 100% / 12);
 }
 
 
@@ -74,6 +78,18 @@ button{
 .flex_box{
     display: flex;
     flex-wrap: wrap;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.nowrap{
+    flex-wrap: nowrap;
+}
+
+.space_around{
+    justify-content: space-around;
 }
 
 /* BUTTONS */
@@ -274,6 +290,7 @@ button{
     color: #0161FF;
 }
 
+
 /* CONTACT */
 
 .flex_contact{
@@ -325,15 +342,102 @@ button{
 .link_style a{
     text-decoration: underline;
     color: blue;
-    font-size: 14px;    
+    font-size: 14px;
 }
 
-/* DROPBOX */
+/* MEMBERS */
 
+.members{
+    padding: 150px 0;
+}
+
+.item{
+    flex-basis: calc(50%); /* Imposta la larghezza degli elementi */
+    position: relative; /* Per fare riferimento all'altezza della larghezza */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.item::before {
+    content: ''; /* Crea un elemento pseudo-contenuto */
+    display: block;
+    padding-top: 100%; /* Imposta l'altezza pari alla larghezza */
+  } 
+
+.logo_members {
+    filter: invert(100%); /* Inverte i colori */ 
+    max-width: 50%; 
+    max-height: 50%; 
+}
+
+.designit{
+    background-color:  #A1D39B;
+    border: 12px solid #d1e9cd;
+}
+
+.asu{
+    background-color: #61072B;
+    
+}
+
+.uf{
+    background-color: #0093CE;
+    
+   }
+
+.toppes{
+    background-color: #FF1C1C;
+    
+}
+
+.world_bicycle{
+    background-color: #D5001F;
+}
+
+
+.hearts_corp{
+    background-color: #B4D0E7;
+}
+
+.lonely_planet{
+    background-color: #0C2481;
+}
+
+
+.clear_chanel{
+    background-color: #FED830;
+}
+
+.bg_color_designit{
+    background-color: #F5F5F5;
+    padding: 50px;
+}
+
+.logo_designit_big{
+    max-width: 50%;
+}
+
+.prova_gratuita{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 135px 0;
+    background-color: #B4D0E7;
+}
+
+.button_bg_color{
+    color: black;
+    background-color: white;
+}
+
+h3.text_color{
+    color: #61072B;
+}
 
 /* DEBUG */
 
-/* .debug .container_lg{
+.debug .container_lg{
    border: 1px solid black;
    padding: 3px;
 }
@@ -341,7 +445,7 @@ button{
 .debug .container{
     border: 1px solid black;
     padding: 3px;
-} */
+}
 
  .debug .container_sm{
     border: 1px solid black;
