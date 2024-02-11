@@ -28,22 +28,18 @@ button{
 
 /* LAYOUT */
 
-.container_lg{
-    max-width: 1944;
+.container_lg, .container, .container_sm{
+    width: 100%;
     margin: 0 auto;
     padding: 0 12px;
 }
 
 .container{
-    max-width: 100%;
     max-width: 1254px;
-    margin: 0 auto;
 }
 
 .container_sm{
-    max-width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
+     max-width: 1024px;
 }
 
 .row{
@@ -71,10 +67,6 @@ button{
 
 /* UTILITI */
 
-.space_between{
-    justify-content: space-between;
-}
-
 .flex_box{
     display: flex;
     flex-wrap: wrap;
@@ -99,23 +91,15 @@ button{
     color: white;
     display: inline-block;
     text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    padding: 0 10px;
 }
 
 .button_small{
     line-height: 35px;
     font-size: 20px;
     padding: 0 10px;
-}
-
-.button_medium{
-    line-height: 45px;
-    font-size: 20px;
-    padding: 0 10px;
-}
-
-.button_bg_none{
-    background: none;
-    color: black;
 }
 
 /* HEADER */
@@ -127,19 +111,19 @@ button{
     color: grey;
 }
 
-.row.header{
+.header{
     justify-content: space-between;
     padding: 22px;
     flex-wrap: nowrap;
+    font-size: 20px;
 }
-
-
 
 /* MAIN */
 
-/* HERO <SECTION> */
+/* HERO */
 .hero_title{
     margin-bottom: 75px;
+    font-size: 75px;
 }
 
 .hero{
@@ -148,15 +132,14 @@ button{
     background-color: #B4D0E7;
 }
 
-.style_column_1{
+.hero_content{
     gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     flex-direction: column;
-}
-
-.title_style_h1{
-    font-size: 75px;
-}
+    font-size: 20px;
+} 
 
 .arrow_hero{
   margin-top: auto;
@@ -164,35 +147,35 @@ button{
 
 
 
-/* PRICING - OPTIONS <SECTION> */
+/* PRICING - OPTIONS */
 
-.fatturazione_radio_button{
-    display: flex;
+.pricing-options{
+    padding-top: 165px;
+}
+
+.pricing-options_title{
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+
+.radio_button{
     gap: 30px;
     align-items: center;
-    color: grey;
     padding-bottom: 50px;
+    font-size: 14px;
 }
 
-.title_style_h3{
-    font-size: 30px;
-    margin-bottom: 75px;
-}
-
-.title_radio{
-    padding-top: 165px;
+.radio{
+    flex-direction: column;
 }
 
 /* CARDS */
 
 .card{
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    align-content: flex-start;
     padding: 0 25px;
     padding-bottom: 25px;
-    align-content: flex-start;
-   
 }
 
 .card_header{
@@ -200,10 +183,9 @@ button{
     line-height: 40px;
     font-size: 15px;
     width: 100%;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-    border-top: 1px solid black;
-    
+    border-top: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
 }
 
 .card_main{
@@ -211,58 +193,53 @@ button{
     flex-direction: column;
     flex-wrap: wrap;
     gap: 55px;
-    padding: 40px 0;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: 1px solid black;
+    padding: 40px 10px 40px 10px;
+    border: 1px solid lightgrey;
 }
 
-.pricing_card{
-    display: flex;
+.links{
     flex-direction: column;
+    gap: 35px;
 }
 
-.price{
-    display: flex;
+
+.title-price{
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 20px;
 }
 
 .user_features{
-    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 20px;
 }
 
-.anchors_link{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 20px;
+.card_main li i {
+    margin-right: 10px;
 }
+
+.card_main li {
+    display: flex;
+} 
 
 .plan_highlights{
-    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 20px;
 }
 
-.price_title{
+.title-price h4{
     font-size: 20px;
+    font-weight: 700;
+} 
+
+.title-price h3{
+    font-size: 12px;
     font-weight: 700;
 }
 
-.price_price{
+.title-price span{
     font-size: 12px;
-}
-
-.mese{
-    font-size: 12px;
-    color: gray;
-}
+    color: lightgray;
+} 
 
 .user_features{
     font-size: 14px;
@@ -275,7 +252,13 @@ button{
 .link_style a{
     text-decoration: underline;
     color: blue;
-    font-size: 14px;    
+}
+
+.link_style::after{
+    content: '_____';
+    display: block;
+    color: lightgray;
+    margin-top: 30px;
 }
 
 .plan_highlights_title{
@@ -290,17 +273,68 @@ button{
     color: #0161FF;
 }
 
+.main_card_orizontal{
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 55px;
+    padding: 40px 10px 40px 10px;
+    border: 1px solid lightgrey;
+}
+
+.team_orizontal_content{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 20px;
+} 
+
+.main_card_orizontal a{
+    display: flex;
+    align-items: flex-start;
+}
+
+.main_card_orizontal p{
+    font-size: 14px;
+}
+
+.team_orizontal_content h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.team_orizontal_content h3{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.team_orizontal_content span{
+    font-size: 12px;
+}
 
 /* CONTACT */
 
-.flex_contact{
+.contact{
+    padding-top: 125px;
+}
+
+.contact_content{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 60px 50px;
+    gap: 20px;
 }
 
-.button_trasparent{
+.contact_content p{
+    font-size: 13px;
+}
+
+.contact_content h3{
+    font-size: 20px;
+}
+
+.bg_trasparent{
     background: none;
     color: black;
     border: 1px solid black;
@@ -308,38 +342,37 @@ button{
 
 /* BUSINESS-BENEFITS */
 
+.business-benefits{
+    padding-top: 75px;
+}
+
+.business-benefits div h4{
+    padding-bottom: 90px;
+}
+
 .card_benefits{
-    padding: 0 60px 70px;
+display: flex;
+flex-direction: column;
+gap: 30px;
+padding: 0 25px;
+padding-bottom: 70px;
 }
 
-.card_title{
+.card_benefits li h3{
     font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 40px;
 }
 
-.card_description{
-    font-size: 14px;
+.card_benefits li p{
+    font-size: 12px;
 }
 
-.row_padding{
-    padding-top: 125px;
-}
-
-
-.title_business-benefits{
-    padding: 150px 0 80px;
-}
-
-.card_title{
-    font-size: 30px;
-}
-
-.row_column{
+.busines_benefits_title{
     flex-direction: column;
+    padding-top: 150px;
+    gap: 75px;
 }
 
-.link_style a{
+.busines_benefits_title a{
     text-decoration: underline;
     color: blue;
     font-size: 14px;
