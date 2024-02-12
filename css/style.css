@@ -77,6 +77,26 @@ button{
     justify-content: space-around;
 }
 
+/* ANIMATIONS */
+
+.bounce {
+	animation-name: bounce;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0px);
+	}
+	25% {
+		transform: translateY(-50px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
 /* BUTTONS */
 
 .button{
@@ -87,6 +107,12 @@ button{
     line-height: 45px;
     font-size: 20px;
     padding: 0 10px;
+    transition: background-color 300ms ease-in;
+}
+
+.button:hover{
+    background-color: white;
+    color: #0161FF;
 }
 
 .button_small{
@@ -380,18 +406,17 @@ padding-bottom: 70px;
 }
 
 .item{
-    flex-basis: calc(50%); /* Imposta la larghezza degli elementi */
-    position: relative; /* Per fare riferimento all'altezza della larghezza */
+    flex-basis: calc(50%);
     display: flex; 
     justify-content: center; 
     align-items: center; 
+    aspect-ratio: 1/1;
+    transition: box-shadow 200ms ease-in; 
 }
 
-.item::before {
-    content: ''; /* Crea un elemento pseudo-contenuto */
-    display: block;
-    padding-top: 100%; /* Imposta l'altezza pari alla larghezza */
-  } 
+.item:hover {
+    box-shadow: inset 0 0 0 10px rgba(255, 255, 255, 0.5); /
+}
 
 .logo_members {
     filter: invert(100%); /* Inverte i colori */ 
@@ -399,48 +424,10 @@ padding-bottom: 70px;
     max-height: 50%; 
 }
 
-.designit{
-    background-color:  #A1D39B;
-    border: 12px solid #d1e9cd;
-}
-
-.asu{
-    background-color: #61072B;
-    
-}
-
-.uf{
-    background-color: #0093CE;
-    
-   }
-
-.toppes{
-    background-color: #FF1C1C;
-    
-}
-
-.world_bicycle{
-    background-color: #D5001F;
-}
-
-
-.hearts_corp{
-    background-color: #B4D0E7;
-}
-
-.lonely_planet{
-    background-color: #0C2481;
-}
-
-
-.clear_chanel{
-    background-color: #FED830;
-}
-
 .bg_color_designit{
     background-color: #F5F5F5;
     padding: 50px;
-}
+} 
 
 .logo_designit_big{
     max-width: 50%;
