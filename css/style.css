@@ -61,22 +61,6 @@ button{
     width: calc(12 * 100% / 12);
 }
 
-
-
-/* UTILITI */
-
-.column{
-    flex-direction: column;
-}
-
-.nowrap{
-    flex-wrap: nowrap;
-}
-
-.space_around{
-    justify-content: space-around;
-}
-
 /* ANIMATIONS */
 
 .bounce {
@@ -111,8 +95,7 @@ button{
 }
 
 .button:hover{
-    background-color: white;
-    color: #0161FF;
+    background-color: #0161FF80;
 }
 
 .button_small{
@@ -503,8 +486,6 @@ footer span::before{
     display: block;
     margin-bottom: 50px;
 }
-
-
 
 
 /* DEBUG */
