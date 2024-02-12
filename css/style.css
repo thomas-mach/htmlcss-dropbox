@@ -16,9 +16,7 @@ a{
 	color: currentColor;
 }
 
-menu,
-ul,
-ol{
+menu, ul, ol{
 	list-style: none;
 }
 
@@ -66,11 +64,6 @@ button{
 
 
 /* UTILITI */
-
-.flex_box{
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .column{
     flex-direction: column;
@@ -148,6 +141,9 @@ button{
 
 
 /* PRICING - OPTIONS */
+.pricing-options .col-4{
+    padding: 0 25px 50px;
+}
 
 .pricing-options{
     padding-top: 165px;
@@ -174,8 +170,9 @@ button{
 .card{
     flex-direction: column;
     align-content: flex-start;
-    padding: 0 25px;
     padding-bottom: 25px;
+    border: 1px solid lightgrey;
+    height: 100%;
 }
 
 .card_header{
@@ -183,9 +180,7 @@ button{
     line-height: 40px;
     font-size: 15px;
     width: 100%;
-    border-top: 1px solid lightgrey;
-    border-left: 1px solid lightgrey;
-    border-right: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
 }
 
 .card_main{
@@ -193,8 +188,8 @@ button{
     flex-direction: column;
     flex-wrap: wrap;
     gap: 55px;
-    padding: 40px 10px 40px 10px;
-    border: 1px solid lightgrey;
+    padding: 40px 10px 40px 10px; 
+    
 }
 
 .links{
@@ -279,7 +274,6 @@ button{
     align-items: flex-start;
     gap: 55px;
     padding: 40px 10px 40px 10px;
-    border: 1px solid lightgrey;
 }
 
 .team_orizontal_content{
@@ -353,16 +347,17 @@ button{
 .card_benefits{
 display: flex;
 flex-direction: column;
+flex-wrap: wrap;
 gap: 30px;
 padding: 0 25px;
 padding-bottom: 70px;
 }
 
-.card_benefits li h3{
+.card_benefits h3{
     font-size: 20px;
 }
 
-.card_benefits li p{
+.card_benefits p{
     font-size: 12px;
 }
 
@@ -469,6 +464,11 @@ h3.text_color{
 }
 
 /* FAQ */
+
+.faq{
+    padding-bottom: 150px;
+}
+
 .faq_question{
     display: flex;
     justify-content: space-between;
@@ -482,6 +482,43 @@ h3.text_color{
     border-bottom: 1px solid black;
     line-height: 140px;
 }
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 100px 0 50px;
+}
+
+footer .row{
+    justify-content: space-between;
+}
+
+.link_title{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+    
+footer ul:not(.link_title){
+    font-size: 14px;
+    line-height: 30px;
+}
+
+footer .col-12{
+    font-size: 12px;
+    padding-top: 100px;
+}
+
+footer span::before{
+    content: '___________';
+    display: block;
+    margin-bottom: 50px;
+}
+
+
+
 
 /* DEBUG */
 
@@ -498,14 +535,12 @@ h3.text_color{
  .debug .container_sm{
     border: 1px solid black;
     padding: 3px;
-    height: 150px;
 }
 
 .debug [class^='col']{
     border: 1px solid red;
-    /* height: 100px; */
     padding: 3px;
-}
+} 
 
 .debug .row{
     border: 1px solid green;
